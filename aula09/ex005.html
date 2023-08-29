@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: darkcyan;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .p1, #msg {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 name="texto">Iniciando estudos DOM</h1>
+    <p class="p1">Aqui vai o resultado</p>
+    <p id="msg">Apredendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        window.document.body.style.backgroundColor  = 'black'
+
+        var prgf = window.document.getElementsByClassName('p1')[0]
+        prgf.style.color = 'lightblue'
+
+        var linha = window.document.getElementById('msg')
+        linha.style.color = 'green'
+
+        var tex = window.document.getElementsByName('texto')[0]
+        tex.style.color = 'yellow'
+
+        var d = window.document.querySelector('div')
+        d.style.color = 'red'
+
+        var bytag = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + bytag.innerText)
+
+    </script>
+</body>
+</html>
