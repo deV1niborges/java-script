@@ -1,1 +1,0 @@
-var dias = new Date();
