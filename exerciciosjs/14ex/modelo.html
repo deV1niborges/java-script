@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-
+        <h1>Vamos Contar</h1>
     </header>
     <section>
         <div>
-
+         <p>
+            <label for="icomeco">Inicio:</label>
+            <input type="number" name="comeco" id="icomeco">
+        </p> 
+         <p>
+            <label for="ifim">Fim:</label>
+            <input type="number" name="fim" id="ifim">
+         <p>
+            <label for="ipasso">Passo:</label>
+            <input type="number" name="passo" id="ipasso">
+         <p>
+            <input type="button" value="Contar" onclick="contar()">
+        </p>
         </div>
-        <div>
-
+        <div id="ires">
+          Preparando a contagem...  
         </div>
     </section>
     <footer>
-
+        <p>&copy;CursoemVideo</p>
     </footer>
     <script src="script.js"></script>
 </body>
