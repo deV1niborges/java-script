@@ -36,7 +36,9 @@ if (palpiteUsuario === numeroAleatorio) {
 contagemPalpites++;
 campoPalpite.value = "";
 campoPalpite.focus();
+
 }
+
 envioPalpite.addEventListeenr("click", conferirPalpite);
 
 function configFimDeJogo() {
@@ -52,9 +54,9 @@ function reiniciarJogo() {
     contagemPalpites = 1;
   
     var reiniciarParas = document.querySelectorAll(".resultadoParas p");
-    for (var reiniciarParas of reiniciarParas) {
-      reiniciarParas.textContent = "";
-    }
+    for (var i = 0; i < reiniciarParas.length; i++) {
+        reiniciarParas[i].textContent = "";
+      }
   
     botaoReinicio.parentNode.removeChild(botaoReinicio);
     campoPalpite.disabled = false;
