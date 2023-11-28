@@ -9,6 +9,40 @@ if(idade < 13) {
     console.log('Adulto')
 }
 
+// Condição switch
+const fruta = "Maçã";
+
+switch (fruta) {
+  case "Banana":
+    console.log("Eu gosto de bananas!");
+    break;
+  case "Maçã":
+    console.log("As maçãs são ok.");
+    break;
+  default:
+    console.log("Nenhuma fruta selecionada");
+}
+
+// Estruturas de loop
+// Loop for
+for (let i = 0; i < 5; i++) {
+  console.log(i); // 0, 1, 2, 3, 4
+}
+
+// Loop while
+let i = 0;
+while (i < 5) {
+  console.log(i); // 0, 1, 2, 3, 4
+  i++;
+}
+
+// Loop do while
+let j = 0;
+do {
+  console.log(j); // 0, 1, 2, 3, 4
+  j++;
+} while (j < 5);
+
 // Funções
 function cumprimentar(nome) {
     console.log("Olá " +  nome)
