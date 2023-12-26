@@ -48,11 +48,3 @@ const frase2 =  "O rato roeu a roupa do rei de Roma"
 
 console.log(frase2.startsWith("O"))
 console.log(frase2.endsWith("Roma"))
-
-  
-
-
-
-
-
-  

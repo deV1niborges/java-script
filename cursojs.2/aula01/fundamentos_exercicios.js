@@ -66,4 +66,3 @@ function converterHorario(horario24) {
 console.log(converterHorario("14:30")); // "2:30 PM"
 console.log(converterHorario("00:00")); // "12:00 AM"
 console.log(converterHorario("12:00")); // "12:00 PM"
-    
