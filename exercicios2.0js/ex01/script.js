@@ -68,4 +68,3 @@ function reiniciarJogo() {
   
     numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
-
