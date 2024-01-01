@@ -1,7 +1,6 @@
 // Exemplo 5 = some os valores dados uma coleção de dados "idades" 
 // [15,46,75,34,23],imprima na tela a soma deste valores. 
 
-
 let idades = [15,46,75,34,23]  // Metódo for
 let total = 0
 
@@ -64,14 +63,62 @@ if(idade1 >= 18) {
     console.log("Menor de idade")
 }
 
+// Variáveis e Operadores:
+// Declare duas variáveis, a e b, e atribua valores a elas. 
+// Em seguida, crie uma terceira variável, soma, que recebe a soma de a e b.
 
+const a = 4
+const b = 2
 
+const soma = a + b
 
+console.log(soma)
 
+// Condicionais:
+// Escreva um programa que verifica se um número é positivo, negativo ou zero.
+// Use condicionais (if, else).
 
+const numero = 1
 
+if (numero > 0) {
+    console.log("O número é positivo.");
+} else if (numero < 0) {
+    console.log("O número é negativo.");
+} else {
+    console.log("O número é zero.");
+}
 
+// Loops:
+// Crie um loop que imprima os números de 1 a 10 no console.
 
+for(let l = 1; l < 11; l++) {
+    console.log(l)
+    // process.stdout.write(i + " ")  Utilizando process.stdout.write para imprimir na mesma linha
+}
+
+// Arrays:
+// Declare um array com pelo menos 5 frutas. 
+// Em seguida, crie um loop que imprima cada elemento do array.
+
+const frutas = ["Melão", "Banana", "Abacaxi", "Pessêgo", "Abacate"]
+
+for(let k = 0; k < frutas.length; k++) {
+    console.log(frutas[k])
+}
+
+// Funções:
+// Escreva uma função que receba dois parâmetros e retorne a soma deles.
+
+function parametro(a, b) {
+    return a + b
+}
+
+let somar = parametro(6, 4)
+console.log(somar)
+
+// Objetos:
+// Crie um objeto que represente um livro com propriedades como título,
+// autor e número de páginas.
 
 
 
