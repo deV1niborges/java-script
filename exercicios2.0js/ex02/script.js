@@ -56,12 +56,11 @@ alert("Soma: " + soma +
 // Escreva um programa que pergunte ao usuário sua idade 
 // e imprima se ele é maior ou menor de idade.
 
-let idade1 = 19
+let idade1 = 17
 
 if(idade1 >= 18) {
     console.log("Maior de idade")
 } else {
-    idade1 < 18
     console.log("Menor de idade")
 }
 
