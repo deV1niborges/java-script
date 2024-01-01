@@ -120,7 +120,36 @@ console.log(somar)
 // Crie um objeto que represente um livro com propriedades como título,
 // autor e número de páginas.
 
+const obj = {
+    titulo: "A Sutil Arte de Ligar o F*da-Se: Uma estratégia inusitada para uma vida melhor",
+    autor: "Mark Manson",
+    numerodePaginas: 224
+}
 
+console.log("Titulo:" + " " + obj.titulo)
+console.log("Autor:" + " " + obj.autor)
+console.log("Número de Páginas:" + " " + obj.numerodePaginas)
 
+// Manipulação de Strings:
+// Crie uma string e exiba seu comprimento no console.
 
+const str = "Olá, Vinicius"
 
+console.log("Comprimento da string:", str.length)
+
+// Manipulação de DOM:
+// Crie uma página HTML simples com um botão.
+// Use JavaScript para exibir uma mensagem no console quando o botão for clicado.
+
+const click = document.getElementById("item").addEventListener("click", function() {
+    console.log("Botão clicado!")
+ })
+
+// Eventos:
+// Adicione um evento de clique a um botão que altera a cor de fundo de uma caixa.
+
+const evento = document.getElementById("inter").addEventListener("click", function() {
+    const novaCor = document.getElementById("fala")
+    novaCor.style.backgroundColor = "green"
+    novaCor.style.color = "white"
+})
