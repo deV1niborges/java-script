@@ -28,16 +28,14 @@ console.log(`Olá, meu nome é ${nome} e eu tenho ${idade} anos.`)
 // Operadores: Crie um programa que solicite ao usuário dois números e exiba o resultado da soma,
 // subtração, multiplicação e divisão desses números.
 
-/*Solicita ao usuário dois números
+/*
 var numero1 = parseFloat(prompt("Digite o primeiro número:"));
 var numero2 = parseFloat(prompt("Digite o segundo número:"));
 
-// Realiza as operações
 var soma = numero1 + numero2;
 var subtracao = numero1 - numero2;
 var multiplicacao = numero1 * numero2;
 
-// Verifica se o segundo número é diferente de zero antes de realizar a divisão
 var divisao;
 if (numero2 !== 0) {
     divisao = numero1 / numero2;
@@ -45,7 +43,6 @@ if (numero2 !== 0) {
     divisao = "Não é possível dividir por zero.";
 }
 
-// Exibe os resultados
 alert("Soma: " + soma +
     "\nSubtração: " + subtracao +
     "\nMultiplicação: " + multiplicacao +
@@ -67,12 +64,12 @@ if(idade1 >= 18) {
 // Declare duas variáveis, a e b, e atribua valores a elas. 
 // Em seguida, crie uma terceira variável, soma, que recebe a soma de a e b.
 
-const a = 4
-const b = 2
+const a = 9
+const b = 10
 
-const soma = a + b
+const result = a + b
 
-console.log(soma)
+console.log(result)
 
 // Condicionais:
 // Escreva um programa que verifica se um número é positivo, negativo ou zero.
@@ -137,7 +134,7 @@ const str = "Olá, Vinicius"
 
 console.log("Comprimento da string:", str.length)
 
-// Manipulação de DOM:
+/* Manipulação de DOM:
 // Crie uma página HTML simples com um botão.
 // Use JavaScript para exibir uma mensagem no console quando o botão for clicado.
 
@@ -152,4 +149,16 @@ const evento = document.getElementById("inter").addEventListener("click", functi
     const novaCor = document.getElementById("fala")
     novaCor.style.backgroundColor = "green"
     novaCor.style.color = "white"
-})
+}) 
+*/
+
+// Transforme Graus Kelvin para Graus Celsius
+
+function paraCelsius() {
+    let transform = tk - 273.15
+    return transform
+}
+
+let tk = 315.15
+
+console.log(tk + " graus Kelvin é igual a: " + paraCelsius() + " graus celsius")
