@@ -10,6 +10,9 @@
             font-family: Arial, Helvetica, sans-serif;
             color: white;
             text-align: center;
+            height: 100vh;
+            width: 800px;
+            margin: auto;
         }
 
         button {
@@ -20,10 +23,10 @@
             height: 80px;
         } 
         
-        p {
+        p#fala{
             background-color: white;
-            color: black;
             width: 400px;
+            color: black;
             margin: auto;
             margin-top: 40px;
             margin-bottom: 40px;
@@ -35,6 +38,11 @@
             color: rgb(255, 38, 0);
             width: 44px;
             height: 40px;
+            margin-bottom: 40px;
+        }
+
+        #numero, #numero2 {
+            width: 100px;
         }
     </style>
 </head>
@@ -45,6 +53,19 @@
     <div>
         <p id="fala"><strong>Parábens!</strong></p>
         <button id="inter">+</button>
+    </div>
+    
+    <div>     
+        <label for="numero">Digite o primeiro número:</label>
+        <input type="number" id="numero" required> 
+
+        <label for="numero2">Digite o outro número:</label>
+        <input type="number"  id="numero2" required> 
+        
+        <input type="submit" value="Enviar" onclick="salvarDados()">   <br>
+        
+        <h4><strong>Exibindo resultados:</strong></h4>
+        <p id="resultados"></p>
     </div>
     <script src="script.js"></script>
 </body>

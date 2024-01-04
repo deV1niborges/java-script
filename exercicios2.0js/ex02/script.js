@@ -28,26 +28,48 @@ console.log(`Olá, meu nome é ${nome} e eu tenho ${idade} anos.`)
 // Operadores: Crie um programa que solicite ao usuário dois números e exiba o resultado da soma,
 // subtração, multiplicação e divisão desses números.
 
-/*
-var numero1 = parseFloat(prompt("Digite o primeiro número:"));
-var numero2 = parseFloat(prompt("Digite o segundo número:"));
+function salvarDados() {
+    // Obtém os valores dos inputs
 
-var soma = numero1 + numero2;
-var subtracao = numero1 - numero2;
-var multiplicacao = numero1 * numero2;
+    const campo = parseFloat(document.getElementById("numero").value) 
+    const campo2 = parseFloat(document.getElementById("numero2").value)
+    
+    // Realiza as operações
 
-var divisao;
-if (numero2 !== 0) {
-    divisao = numero1 / numero2;
-} else {
-    divisao = "Não é possível dividir por zero.";
+    const soma = campo + campo2
+    const subtracao = campo - campo2
+    const multiplicacao = campo * campo2
+   
+    let divisao;
+    if(campo2 !== 0) {
+        divisao = campo / campo2
+    } else {
+        divisao = "Não é possível dividir por zero."
+    }
+
+    const resultados = document.getElementById("resultados")
+    resultados.innerHTML = "Soma: " + soma + "<br>" +
+    "Subtração: " + subtracao + "<br>" +
+    "Multiplicação: " + multiplicacao + "<br>" +
+    "Divisão: " + divisao 
+
+    // Verifica se o valor do input está vazio
+
+    const inputValor1 = document.getElementById("numero").value
+    const inputValor2 = document.getElementById("numero2").value
+
+    if (inputValor1.trim() === '' || (inputValor2.trim() === '')) {
+        alert('Por favor, preencha o campo.')
+    } 
+
+    // Limpa o conteúdo do input
+
+    const inputValue1 = document.getElementById("numero")
+    const inputValue2 = document.getElementById("numero2")
+
+    inputValue1.value = ''
+    inputValue2.value = ''
 }
-
-alert("Soma: " + soma +
-    "\nSubtração: " + subtracao +
-    "\nMultiplicação: " + multiplicacao +
-    "\nDivisão: " + divisao);
-*/
 
 // Escreva um programa que pergunte ao usuário sua idade 
 // e imprima se ele é maior ou menor de idade.
