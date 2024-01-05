@@ -107,8 +107,6 @@ console.log(joao)
 
 joao.falar()
 
-const pedro = new Pessoa("Pedro", 21)
-
 class Funcionario extends Pessoa {
     constructor(nome, idade, salario) {
         super(nome, idade)
@@ -123,7 +121,5 @@ class Funcionario extends Pessoa {
 
 const mario = new Funcionario("Mario", 44, 3200)
 console.log(mario)
-
-mario.falar()
 
 mario.falarFuncionario()
