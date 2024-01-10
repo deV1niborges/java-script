@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Fetch</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        background-color: rgba(128, 127, 127, 0.637);
+        font-family: Helvetica;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Conteúdo principal da página -->
+    <main>
+      <h1>Aprendendo Fetch API</h1>
+      <!-- Botão que chama a função filledList() quando clicado -->
+      <button onclick="filledList()">Clique aqui para preencher a lista</button>
+      <!-- Lista não ordenada (ul) que será preenchida dinamicamente pela Fetch API -->
+      <ul id="list"></ul>
+    </main>
+  </body>
+</html>
